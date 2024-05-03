@@ -1,0 +1,95 @@
+---
+# This empty front matter tells Jekyll to process this file.
+---
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style_JC.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    {% include head-custom.html %}
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-container">
+                {% if site.logo %}
+                  <div class="logo">
+                    <h1><a href="{{ "/" | absolute_url }}"><img src="{{site.logo | relative_url}}" alt="Logo"/></a></h1>
+                  </div>
+                {% endif %}
+      
+                <div class="header-info">
+                  <p>Journal club</p>
+      
+                  {% if site.github.is_project_page %}
+                  <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
+                  {% endif %}
+      
+                  {% if site.github.is_user_page %}
+                  <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+                  {% endif %}
+      
+                  {% if site.show_downloads %}
+                  <ul class="downloads">
+                    <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
+                    <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
+                    <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
+                  </ul>
+                  {% endif %}
+                </div>
+              </div>
+        </header>
+        <section>
+            <div id="table-container"></div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    Papa.parse("{{ 'journal_club.csv' | relative_url }}", {
+                        download: true,
+                        header: true,
+                        complete: function(results) {
+                            var data = results.data;
+                            var table = "<table border='1'>";
+                            table += "<tr>";
+                            Object.keys(data[0]).forEach(function(header) {
+                                table += "<th>" + header + "</th>";
+                            });
+                            table += "</tr>";
+                            data.forEach(function(row) {
+                                table += "<tr>";
+                                Object.keys(row).forEach(function(header) {
+                                    var cellContent = row[header];
+                                    // Split the cell content if it contains a hyphen indicating a URL format
+                                    if (cellContent.includes('-')) {
+                                        var parts = cellContent.split('-');
+                                        var linkText = parts[0];
+                                        var url = parts[1];
+                                        // Create a link only if the URL part starts correctly
+                                        if (url.startsWith("http://") || url.startsWith("https://")) {
+                                            cellContent = '<a href="' + url + '" target="_blank">' + linkText + '</a>';
+                                        }
+                                    }
+                                    table += "<td>" + cellContent + "</td>";
+                                });
+                                table += "</tr>";
+                            });
+                            table += "</table>";
+                            document.getElementById('table-container').innerHTML = table;
+                        }
+                    });
+                });
+                </script>                
+        </section>
+        <footer>
+            <!-- footer content -->
+        </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+</body>
+</html>
