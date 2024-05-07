@@ -1,5 +1,5 @@
 ---
-layout: tutorials
+layout: wiki
 title: mTRF Methods and Toolbox
 ---
 

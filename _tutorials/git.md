@@ -1,5 +1,5 @@
 ---
-layout: tutorials
+layout: wiki
 title: Git Basics
 ---
 
