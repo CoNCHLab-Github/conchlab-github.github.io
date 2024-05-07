@@ -1,5 +1,5 @@
 ---
-layout: guides
+layout: wiki
 title: Writing clean code
 ---
 

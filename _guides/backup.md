@@ -1,9 +1,7 @@
 ---
-layout: guides
+layout: wiki
 title: Set up your regular backup
 ---
-
-# Set up your regular backup
 
 > Importance of backup
 

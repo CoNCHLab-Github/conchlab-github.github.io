@@ -1,5 +1,5 @@
 ---
-layout: guides
+layout: wiki
 title: Contributing to CoNCH Lab Wiki
 ---
 
