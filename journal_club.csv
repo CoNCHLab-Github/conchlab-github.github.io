@@ -1,14 +1,17 @@
 ﻿Date,Title,Date Published,Author(s),Journal,Link
-16 Nov 2023,Auditory Perception,2009 - reviewed 2021,O’Callaghan,Stanford Encyclopedia of Philosophy,link-https://plato.stanford.edu/archives/fall2021/entries/perception-auditory/
-23 Nov 2023,Selective cortical representation of attended speaker in multi-talker speech perception,2012,Nima Mesgarani & Edward F. Chang,Nature,doi
-30 Nov 2023,What can we learn from inactivation studies? Lessons from auditory cortex,2022,"Zuzanna A. Slonina, Katarina C. Poole, Jennifer K. Bizley",Trends in Neurosciences,doi-https://doi.org/10.1016/j.tins.2021.10.005
-07 Dec 2023,Information flow across the cortical timescale hierarchy during  narrative construction,2022,"Claire H. C. Changa, Samuel A. Nastasea, and Uri Hasson",PNAS,DOI link
-14 Dec 2023,Leading and following: Noise differently affects semantic and acoustic processing during naturalistic speech comprehension,2023,"Xinmiao Zhang, Jiawei Li, Zhuoran Li, Bo Hong, Tongxiang Diao, Xin Ma, Guido Nolte, Andreas K Engel, Dan Zhang",NeuroImage,doi
-,,,,,
-,,,,,
-,Large-scale single-neuron speech sound encoding across the depth of human cortex,2023,"Matthew K. Leonard, Laura Gwilliams, Kristin K. Sellers, Jason E. Chung, Duo Xu,  Gavin Mischler, Nima Mesgarani, Marleen Welkenhuysen, Barundeb Dutta & Edward F. Chang",Nature,doi
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
+09-May-24,A manifesto for reproducible science,Jan 2017,"Marcus R. Munafò, Brian A. Nosek, Dorothy V. M. Bishop, Katherine S. Button, Christopher D. Chambers, Nathalie Percie du Sert, Uri Simonsohn, Eric-Jan Wagenmakers, Jennifer J. Ware & John P. A. Ioannidis ",Nature Human Behavior,doi@https://doi.org/10.1038/s41562-016-0021
+02-May-24,Predicting speech intelligibility in hearing-impaired listeners using a physiologically inspired auditory model,Dec 2022,"Johannes Zaar, Laurel H. Carney",Hearing Research,doi@https://doi.org/10.1016/j.heares.2022.108553
+25-Apr-24,Hierarchical dynamic coding coordinates speech comprehension in the brain,Apr 2024,"Laura Gwilliams, Alec Marantz, David Poeppel, Jean-Remi King",bioRxiv,doi@https://doi.org/10.1101/2024.04.19.590280
+18-Apr-24,What I learned at CNS 2024,,,,
+11-Apr-24,No replication of direct neuronal activity–related (DIANA) fMRI in anesthetized mice,Mar 2024,"Sang-Han Choi, Geun Ho Im, Sangcheon Choi, Xin Yu, Peter A Bandettini, Ravi S Menon, Seong-Gi Kim",Science Advances,doi@https://doi.org/10.1126/sciadv.adl0999
+04-Apr-24,Natural rhythms of periodic temporal attention,Feb 2022,"Arnaud Zalta, Spase Petkoski & Benjamin Morillon ",Nature Communications,doi@https://doi.org/10.1038/s41467-020-14888-8
+21-Mar-24,The perception of silence,Jul 2023,"Rui Zhe Goh, Ian B. Phillips, and Chaz Firestone ",PNAS,doi@https://doi.org/10.1073/pnas.2301463120
+14-Mar-24,Pre-treatment Ongoing Cortical Oscillatory Activity Predicts Improvement of Tinnitus After Partial Peripheral Reafferentation With Hearing Aids,May 2020,"Jae Joon Han, Dirk De Ridder, Sven Vanneste, Yu-Chen Chen, Ja-Won Koo, Jae-Jin Song",Frontiers in Neuroscience,doi@https://doi.org/10.3389/fnins.2020.00410
+07-Mar-24,Preserved functional organization of human auditory cortex in individuals missing one temporal lobe from infancy,Jan 2023," Tamar I Regev, Benjamin Lipkin,  Dana Boebinger, Alexander Paunov,  Hope Kean, Sam Norman-Haignere, Evelina Fedorenko",bioRxiv,doi@https://doi.org/10.1101/2023.01.18.523979
+29-Feb-24,Cingulate cortex facilitates auditory perception under challenging listening conditions,Nov 2023,"Kelsey L. Anbuhl, Marielisa Diez Castro, Nikki A. Lee, Vivian S. Lee, Dan H. Sanes",bioRxiv,doi@https://doi.org/10.1101/2023.11.10.566668
+15-Feb-24,Large-scale single-neuron speech sound encoding across the depth of human cortex,Dec 2023,"Matthew K. Leonard, Laura Gwilliams, Kristin K. Sellers, Jason E. Chung, Duo Xu,  Gavin Mischler, Nima Mesgarani, Marleen Welkenhuysen, Barundeb Dutta & Edward F. Chang",Nature,doi@https://doi.org/10.1038/s41586-023-06839-2
+14-Dec-23,Leading and following: Noise differently affects semantic and acoustic processing during naturalistic speech comprehension,2023,"Xinmiao Zhang, Jiawei Li, Zhuoran Li, Bo Hong, Tongxiang Diao, Xin Ma, Guido Nolte, Andreas K Engel, Dan Zhang",NeuroImage,doi@https://doi.org/10.1016/j.neuroimage.2023.120404
+07-Dec-23,Information flow across the cortical timescale hierarchy during  narrative construction,2022,"Claire H. C. Changa, Samuel A. Nastasea, and Uri Hasson",PNAS,doi@https://doi.org/10.1073/pnas.2209307119
+30-Nov-23,What can we learn from inactivation studies? Lessons from auditory cortex,2022,"Zuzanna A. Slonina, Katarina C. Poole, Jennifer K. Bizley",Trends in Neurosciences,doi@https://doi.org/10.1016/j.tins.2021.10.005
+23-Nov-23,Selective cortical representation of attended speaker in multi-talker speech perception,2012,Nima Mesgarani & Edward F. Chang,Nature,doi@https://doi.org/10.1038/nature11020
+16-Nov-23,Auditory Perception,2009 - reviewed 2021,O’Callaghan,Stanford Encyclopedia of Philosophy,link@https://plato.stanford.edu/archives/fall2021/entries/perception-auditory/
