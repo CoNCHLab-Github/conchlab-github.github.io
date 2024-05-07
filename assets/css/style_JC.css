@@ -128,6 +128,8 @@
 
 .highlight { background-color: #f8f8f8; }
 
+html, body {margin: 0; height: 100%; overflow: hidden}
+
 body { background-color: #fff; padding: 50px; font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #727272; font-weight: 400; }
 
 h1, h2, h3, h4, h5, h6 { color: #222; margin: 0 0 20px; }
@@ -236,7 +238,16 @@ footer { width: 270px; float: left; position: fixed; bottom: 50px; -webkit-font-
     width: 20%;
     margin-left: 5%;
     margin-top: 2.5%;
-    margin-bottom: 2.5%;
+    /* overflow-y: scroll;  */
+  }
+  #footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 2.5%;
+    margin-left: 5%;
+    margin-right: 5%;
     /* overflow-y: scroll;  */
   }
 }
@@ -251,4 +262,8 @@ footer { width: 270px; float: left; position: fixed; bottom: 50px; -webkit-font-
   height:100%;
   /* background-color: #4FC1E9; */
   text-align: left;
+}
+
+#footer {
+  background-color: #fff;
 }
