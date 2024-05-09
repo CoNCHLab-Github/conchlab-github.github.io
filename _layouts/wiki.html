@@ -19,7 +19,7 @@
   <body>
     <div class="container">
       <div class="row">
-          <div class="col-sm-4">
+          <div class="col-sm-4" id="side">
           {% if site.logo %}
               <div class="row"> 
               <div class="logo">
@@ -34,11 +34,14 @@
                 </div>
               </div>
           </div>
-          <div class="col-sm-8">
+          <div class="col-sm-8" id="content">
             <h1>{{ page.title }}</h1>
             {{ content }}
           </div>
       </div>
+      <!-- <div class="row" id="footer"> -->
+        <!-- Footer -->
+      <!-- </div> -->
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>  
   </body>

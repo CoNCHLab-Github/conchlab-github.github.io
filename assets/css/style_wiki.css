@@ -128,6 +128,8 @@
 
 .highlight { background-color: #f8f8f8; }
 
+/* html, body {margin: 0; height: 100%; overflow: hidden} */
+
 body { background-color: #fff; padding: 50px; font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #727272; font-weight: 400; }
 
 h1, h2, h3, h4, h5, h6 { color: #222; margin: 0 0 20px; }
@@ -214,3 +216,54 @@ footer { width: 270px; float: left; position: fixed; bottom: 50px; -webkit-font-
   .downloads { width: 99%; }
   .downloads li, .downloads li + li + li { width: 33%; } }
 @media print { body { padding: 0.4in; font-size: 12pt; color: #444; } }
+
+@media (min-width: 768px){
+  #content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow-y: scroll;
+    width: 55%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  #side {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    width: 25%;
+    margin-left: 10%;
+    margin-top: 5%;
+    /* overflow-y: scroll;  */
+  }
+  #footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* overflow-y: scroll;  */
+  }
+}
+
+#side {
+  /* background-color: #FC6E51; */
+  text-align: left;
+  height:100%;
+}
+
+#content {
+  height:100%;
+  /* background-color: #4FC1E9; */
+  text-align: left;
+}
+
+#footer {
+  background-color: #fff;
+}
