@@ -4,7 +4,7 @@ title: Set up your regular backup
 ---
 <img src="./backup/img/houseofcards.png" width="500" height="500">
 
-> Picture this: you're deep into a your research project, analyzing years of valuable data. Suddenly, your system fails. Without regular backups, that mountain of critical data—essential for your groundbreaking research—could vanish in an instant, like sand slipping through your fingers. This isn’t just a minor setback; it’s a disaster scenario where lost data means lost time, funding, and possibly irreplaceable scientific insights. It's like building a house of cards only to watch it fall. Regular backups are your insurance policy against such catastrophes, ensuring that your hard work and important discoveries are preserved safely, no matter what happens. So, why risk it? Secure your data, secure your peace of mind.
+> Picture this: you're deep into your research project, analyzing years of valuable data. Suddenly, your system fails. Without regular backups, that mountain of critical data—essential for your groundbreaking research—could vanish in an instant, like sand slipping through your fingers. This isn’t just a minor setback; it’s a disaster scenario where lost data means lost time, funding, and possibly irreplaceable scientific insights. It's like building a house of cards only to watch it fall. Regular backups are your insurance policy against such catastrophes, ensuring that your hard work and important discoveries are preserved safely, no matter what happens. So, why risk it? Secure your data, secure your peace of mind.
 
 ## Mounting the lab backup storage
 ### Windows
