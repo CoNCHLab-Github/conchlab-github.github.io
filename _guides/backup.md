@@ -50,7 +50,7 @@ To mount your folder on the backup storage using smb protocol follow the instruc
 4. Add the following lines to mount the storage automatically on system boot:
     ```
     # Mount lab backup storage
-    //129.100.118.242/<your_folder_name> /mnt/backup cifs credentials=/home/<username>/.smbcredentials 0 0
+    //129.100.118.242/<your_folder_name> /mnt/backup cifs uid=<username>,credentials=/home/<username>/.smbcredentials 0 0
     ```
     `<username>` is your local username.
 5. Create `.smbcredentials` file in your home directory and enter your credentials for the backup server: 
