@@ -32,6 +32,16 @@ title: Set up your regular backup
 14. The backup folder should be mounted in the drive you specified.
 
 ### Mac
+1. In finder, click Go > Connect to Server or press command+k.
+2. In the window that pops up, enter the path to your folder. It would look like this: `smb://129.100.118.242/<your_folder_name>`
+3. Click "Connect".
+4. If you're prompted for a confirmation, click "Connect".
+5. You'll be asked for your credentials on the server. Select 'Registered User" under "Connect As". Enter your server username in the "Name" field **IN ALL CAPS**. Enter your password in the corresponding field. You can choose to save this credentials to your keychain as well.
+6. Click "Connect".
+7. You should be able to access the mounted folder under the "Locations" menu in any Finder window (if not, go to Finder > Settings and turn on Connected servers). 
+8. Do the following to make this drive mount automatically after a reboot.
+9. Go to "System Settings", and search for "Login Items".
+10. Click on the + button, find and select the folder you mounted then click "Open".
 ### Linux (Ubuntu)
 To mount your folder on the backup storage using smb protocol follow the instructions below:
 
