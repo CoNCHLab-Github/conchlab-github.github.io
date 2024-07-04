@@ -2,30 +2,31 @@
 layout: wiki
 title: Set up your regular backup
 ---
-<img src="./backup/img/houseofcards.png" width="500" height="500">
+<img src="./backup/img/houseofcards.png" width="400" height="400" style="display: block; margin: 0 auto">
 
 > Picture this: you're deep into your research project, analyzing years of valuable data. Suddenly, your system fails. Without regular backups, that mountain of critical data—essential for your groundbreaking research—could vanish in an instant, like sand slipping through your fingers. This isn’t just a minor setback; it’s a disaster scenario where lost data means lost time, funding, and possibly irreplaceable scientific insights. It's like building a house of cards only to watch it fall. Regular backups are your insurance policy against such catastrophes, ensuring that your hard work and important discoveries are preserved safely, no matter what happens. So, why risk it? Secure your data, secure your peace of mind.
 
+## Lab backup storage
+server ip: 129.100.118.242
+
 ## Mounting the lab backup storage
 ### Windows
-![Map network drive](./backup/img/map_network_drive1.png)
+1. Open "This PC".
 
-1. Open "This PC"
+    <img src="./backup/img/map_network_drive1.png" width="800" style="display: block; margin: 0 auto">
 2. Click on the ellipsis button (...)
 3. From the menu select "Map network drive" 
+4. You'll see a window like below.
 
-    ![Map network drive](./backup/img/map_network_drive2.png)
-
-4. You'll see a window like above
+    <img src="./backup/img/map_network_drive2.png" width="500" style="display: block; margin: 0 auto">
 5. Select an arbirtary drive for mounting the backup storage. It usually starts from the Z letter and if that is taken suggests the letter before that and so on.
 6. Folder refers to the folder on the backup storage that you intend to access. Type the IP address for the storage and your folder name. For example: `\\129.100.118.242\Ali`
 7. Make sure to check "Reconnect at sign-in" so the backup folder would be automatically mounted at start up.
 8. Check "Connect using different credentials" since your credentials for the backup server would not be the same as your Western ID.
 9. Click "Finish".
-
-    ![Map network drive](./backup/img/map_network_drive3.png)
-
 10. In the new popped-up window, click "More choices" select "Use a different account".
+
+    <img src="./backup/img/map_network_drive3.png" width="500" style="display: block; margin: 0 auto">
 11. Enter your username and password for the backup server. 
 12. Check "Remember my credentials".
 13. Click "OK".
@@ -33,15 +34,28 @@ title: Set up your regular backup
 
 ### Mac
 1. In finder, click Go > Connect to Server or press command+k.
-2. In the window that pops up, enter the path to your folder. It would look like this: `smb://129.100.118.242/<your_folder_name>`
+
+    <img src="./backup/img/mac_map_network_drive1.png" width="400" style="display: block; margin: 0 auto">
+2. In the window that pops up, enter the path to your folder. It would look like this: `smb://129.100.118.242/<your_folder_name>`.
+
+    <img src="./backup/img/mac_map_network_drive2.png" width="600" style="display: block; margin: 0 auto">
 3. Click "Connect".
 4. If you're prompted for a confirmation, click "Connect".
+
+    <img src="./backup/img/mac_map_network_drive3.png" width="400" style="display: block; margin: 0 auto">
 5. You'll be asked for your credentials on the server. Select 'Registered User" under "Connect As". Enter your server username in the "Name" field **IN ALL CAPS**. Enter your password in the corresponding field. You can choose to save this credentials to your keychain as well.
+
+    <img src="./backup/img/mac_map_network_drive4.png" width="600" style="display: block; margin: 0 auto">
 6. Click "Connect".
 7. You should be able to access the mounted folder under the "Locations" menu in any Finder window (if not, go to Finder > Settings and turn on Connected servers). 
 8. Do the following to make this drive mount automatically after a reboot.
 9. Go to "System Settings", and search for "Login Items".
+
+    <img src="./backup/img/mac_map_network_drive5.png" width="700" style="display: block; margin: 0 auto">
 10. Click on the + button, find and select the folder you mounted then click "Open".
+
+    <img src="./backup/img/mac_map_network_drive6.png" width="800" style="display: block; margin: 0 auto">
+
 ### Linux (Ubuntu)
 To mount your folder on the backup storage using smb protocol follow the instructions below:
 
@@ -83,7 +97,7 @@ To mount your folder on the backup storage using smb protocol follow the instruc
     sudo mount -a
     ```
 
-## Set-up a regular automatic backup policy
+## Set-up an automatic regular backup policy
 ### Windows
 There are diffrent ways to set-up an automatic backup in windows. Third-party softwares usually offer more options, flexibility, and controls on the backup policies you define. The ["EaseUS Todo Backup"](https://www.easeus.com/brand/todo-backup/tb-free.html) is a one of the options. The free version offers more than enough for our purposes. The following will go over instruction for setting up your automatic backup using EaseUS Todo Backup.
 
